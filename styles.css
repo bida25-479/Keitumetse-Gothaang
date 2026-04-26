@@ -233,6 +233,7 @@ img{
 .peach-section{
     background: #FFF1E6;
     padding: 60px 20px;
+    margin-top: 50px;
     position: relative;
 }
 .info box{
@@ -242,7 +243,6 @@ img{
     padding-top: 20px;
     max-width: 420px;
     margin: auto;
-    margin-top: 50px;
     box-shadow: 0 12px 30px rgba(0,0,0,0.08);
     font-family: Arial, sans-serif;
 }
