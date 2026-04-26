@@ -292,7 +292,10 @@ img{
     max-width: 600px;
     margin: auto;
 }
-
+.example-text{
+    font-size: 0.85rem;
+    color: #777;
+}
 .feedback-title{
     margin-top: 60px;
     text-align: center;
