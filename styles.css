@@ -215,7 +215,7 @@ img{
     color: #000;
     margin-top: 4px;
 }
- 
+ /*contact page css*/
 .contact-form{
     max-width: 600px;
     margin: auto;
@@ -292,6 +292,7 @@ img{
     border-radius: 8px;
 }
 
+/*feedback page css*/
 .feedback-form{
     max-width: 600px;
     margin: auto;
@@ -304,6 +305,41 @@ img{
     margin-top: 60px;
     text-align: center;
 }
+
+/*order page and frames pages*/
+.product-box, .order-container {
+    background-color: white;
+    padding: 20px;
+    margin-top: 10px;
+   border radius: 10px;
+}
+.product-box img{
+    width: 200px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+text-area {
+    height: 100px;
+}
+input [type="checkbox"]
+input [type="radio" {
+    width: auto;
+    margin-right: 10px;
+}
+
 .btn-primary{
     background-color: #f4a261 !important;
     color: white;
