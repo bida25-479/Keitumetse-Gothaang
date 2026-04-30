@@ -203,7 +203,7 @@ img{
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     
 }
-product-card img{
+.product-card img{
     width: 220px;
     display: block;
     margin-bottom: 15px;
