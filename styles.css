@@ -63,7 +63,7 @@ main img{
     margin: auto;
 }
 
-.page content{
+.page-content{
     padding: 60px 20px;
 }
 .page-content p{
@@ -180,11 +180,13 @@ img{
 .collection-section {
     padding: 60px 20px;
 }
-.product-grid{
+.product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    margin-bottom: 40px;
+    margin-bottom: cover;  margin-bottom: 40px;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .product-grid img{
@@ -197,16 +199,17 @@ img{
 }
 /*for product cards accross all pages*/
 .product-card{
-    background: white;
+    background: #ffffff;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px;
     position: relative;
     padding: 20px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);   
 }
+
 .product-card img{
     width: 100%;
+    height: 180px;
 }
 
 .product-name{
@@ -273,7 +276,7 @@ small-boxes div{
     margin-top: 50px;
     position: relative;
 }
-.info box{
+.info-box{
     background: #ffffff;
     border radius: 14px;
     padding: 28px;
@@ -338,9 +341,9 @@ label {
     margin-bottom: 6px;
     font-weight: bold;
 }
-input [type="number"],
-input [type="text"],
-input [type="email"],
+input[type="number"],
+input[type="text"],
+input[type="email"],
 select,
 textarea {
     width: 100%;
@@ -369,12 +372,12 @@ input[type="radio"] {
         font-size: 16px;
         cursor: pointer;
     }
-.next-btn:hoover,
+.next-btn:hover,
 .submit-btn:hover {
     background: #e06d00;
 }
         
-text-area {
+textarea {
     height: 100px;
 }
 .top-check{
@@ -382,7 +385,7 @@ text-area {
     top: 15px;
     right: 15px;
 }
-.top-check input[type="check-box"]{
+.top-check input[type="checkbox"]{
    width: 18px;
    height: 18px;
    cursor: pointer;
