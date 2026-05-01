@@ -59,28 +59,47 @@
             </div>
         </nav>
      </header>
-        <div class="main-container">
-            <h1>Order Form</h1>
-            <form>
-                <label>Full Name</label>
-                <input type="text">
-                <label>Phone number</label>
-                <input type="text">
-                <label>Email Address</label>
-                <input type="email">
+        
+        <main class="page-content">
+            <h2 class="text-center mb-4">Order Details</h2>
+            
+            <form class="order-form">
+                <div class="col-md-6 mb-3">
+                <label>Last Name *</label>
+                <input type="text" required>
+                </div>
+                
+                 <div class="col-md-6 mb-3">
+                <label>First Name *</label>
+                <input type="text" required>
+                </div>
+            </div>
 
-                <h2>Selected Products</h2>
-                <div class="selected-box"
-                <p>Dolly - P410</p>
-                <p>Lisse - P530</p>
-                <h2> Total: P700</h2>
+                <div class="mb-3">
+                   <label>Email Address *</label>  
+                 <input type="email" required>
+                
+               <div class="mb-4">
+                    <label>Phone number *</label>
+                <input type="text" required>
+               </div>
+               
+                <h4 class="section-title">Selected Products</h4>
+                <div id="cart-items" class="selected-box">
+                <p>No products seleted yet.</p>
+                </div>
+              
+               <p class="section-title">Total: <strong>P<span id="cart-total">0</span></</strong></p>
 
-                <label>Deliver Option</label>
-
-                <input type="radio" name="delivery">Collect In Store <br>
-                <input type="radio" name="delivery"> Home Delivery
+                <h4 class="section-title">Delivery Option</h4>
+                <label><input type="radio" name="delivery" checked>Collect In Store</label><br>
+                <label><input type="radio" name="delivery"> Home Delivery</label>
+               
+                <div class="mb-4 mt-3">
                 <label> Delivery Address</label>
                 <textarea></textarea>
+                </div>
+          
 
                 <label>Payment Method</label>
                 <input type="radio" name="payment"> Cash In Store<br>
@@ -88,8 +107,32 @@
 
                 <button type="submit" class="submit-btn">Submit Order</button>    
         </form>
+        </main>
+        
      <footer>
         <p>&copy; 2026 BrightSightKids| Clear Vision For Little Eyes| All rights reserved</p>
      </footer>
+        
+<script>
+const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+const cartContainer = document.getElementById('cart-items');
+const totalDisplay = document.getElementById('cart-total');
+
+cartContainer.innerHTML = '';
+let total = 0;
+
+if (cartItems.length === 0) {
+  cartContainer.innerHTML = '<p>No products selected yet.</p>';
+} else {
+    
+cartItems.forEach(item => {
+    total += item.price;
+    cartContainer.innerHTML += `<p>${item.name} - P${item.price}</p>`;
+  });
+}
+
+totalDisplay.textContent = total;
+</script>
+       
  </body>
 </html>
