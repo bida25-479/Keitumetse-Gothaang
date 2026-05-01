@@ -409,8 +409,10 @@
              <div class="product-grid">   
                  
              <div class="product-card">
-                    <div class="top-check">
-                    <input type="checkbox">
+                    <input type="checkbox"
+                        class="add-to-cart"
+                        data-name="Dolly"
+                        data-price="480">
                     </div>
                     <img src="https://i.pinimg.com/1200x/7b/a1/e2/7ba1e25ebb963f2da1ed7c2222f034ca.jpg" alt="Joe">
                     <h3>Joe</h3>
@@ -428,8 +430,10 @@
 
 
                <div class="product-card">
-                    <div class="top-check">
-                    <input type="checkbox">
+                    <input type="checkbox"
+                    class="add-to-cart"
+                    data-name="Dolly"
+                    data-price="480">   
                     </div>
                     <img src="https://i.pinimg.com/736x/36/a3/55/36a355b4b3b31b47bff39fdca8659a57.jpg" alt="Brilley">
                       <h3>Brilley</h3>
@@ -447,8 +451,10 @@
 
 
                  <div class="product-card">
-                    <div class="top-check">
-                    <input type="checkbox">
+                    <input type="checkbox"
+                    class="add-to-cart"
+                    data-name="Dolly"
+                    data-price="480">
                     </div>
                     <img src="https://i.pinimg.com/1200x/06/43/9f/06439fe3547a719927d1d8ec1fa8fdc9.jpg" alt="Jayy">
                        <h3>Jayy</h3>
@@ -471,8 +477,10 @@
              <div class="product-grid">  
                  
                  <div class="product-card">
-                    <div class="top-check">
-                    <input type="checkbox">
+                    <input type="checkbox"
+                     class="add-to-cart"
+                     data-name="Dolly"
+                    data-price="480">
                     </div>
                     <img src="https://i.pinimg.com/1200x/0d/ad/a2/0dada273c522229151cb04a9693794f8.jpg" alt="Silver">
                        <h3>Silver</h3>
@@ -490,8 +498,10 @@
 
 
                 <div class="product-card">
-                    <div class="top-check">
-                    <input type="checkbox">
+                    <input type="checkbox"
+                         class="add-to-cart"
+                        data-name="Dolly"
+                        data-price="480">
                     </div>
                     <img src="https://i.pinimg.com/1200x/03/75/d5/0375d56f4755c3a1f6af563ed45d7b5c.jpg" alt="Grey">
                       <h3>Grey</h3>
@@ -509,8 +519,10 @@
 
 
                  <div class="product-card">
-                    <div class="top-check">
-                    <input type="checkbox">
+                    <input type="checkbox"
+                    class="add-to-cart"
+                    data-name="Dolly"
+                    data-price="480">
                     </div>
                     <img src="https://i.pinimg.com/1200x/1f/e4/a3/1fe4a34b94b803b8655105ccb685bcae.jpg" alt="Blue">
                       <h3>Blue</h3>
@@ -536,6 +548,29 @@
          <!--Bootstrap JS and dependencies-->
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+        
+<script>
+const checkboxes = document.querySelectorAll('.add-to-cart');
+
+checkboxes.forEach(box => {
+  box.addEventListener('change', () => {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    const name = box.dataset.name;
+    const price = Number(box.dataset.price);
+
+    if (box.checked) {
+      cart.push({ name, price });
+    } else {
+        
+cart = cart.filter(item => item.name !== name);
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+  });
+});
+</script>
 
 </body>
 </html>
