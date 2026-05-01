@@ -85,9 +85,9 @@
                </div>
                
                 <h4 class="section-title">Selected Products</h4>
-                <div id="cart-items" class="selected-box">
-                <p>No products seleted yet.</p>
-                </div>
+                <div id="cart-items" class="selected-box"></div>
+                <p></p>
+               
               
                <p class="section-title">Total: <strong>P<span id="cart-total">0</span></</strong></p>
 
@@ -113,26 +113,27 @@
         <p>&copy; 2026 BrightSightKids| Clear Vision For Little Eyes| All rights reserved</p>
      </footer>
         
+
 <script>
-const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-const cartContainer = document.getElementById('cart-items');
-const totalDisplay = document.getElementById('cart-total');
+const cart = JSON.parse(localStorage.getItem('cart')) || [];
+const cartBox = document.getElementById('cart-items');
+const totalEl = document.getElementById('cart-total');
 
-cartContainer.innerHTML = '';
 let total = 0;
+cartBox.innerHTML = '';
 
-if (cartItems.length === 0) {
-  cartContainer.innerHTML = '<p>No products selected yet.</p>';
+if (cart.length === 0) {
+  cartBox.innerHTML = '<p>No products selected.</p>';
 } else {
-    
-cartItems.forEach(item => {
+  cart.forEach(item => {
     total += item.price;
-    cartContainer.innerHTML += `<p>${item.name} - P${item.price}</p>`;
+    cartBox.innerHTML += `<p>${item.name} - P${item.price}
+</p>`;
   });
 }
 
-totalDisplay.textContent = total;
+totalEl.textContent = total;
 </script>
-       
+
  </body>
 </html>
