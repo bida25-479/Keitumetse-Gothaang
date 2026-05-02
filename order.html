@@ -105,7 +105,14 @@
                 <input type="radio" name="payment"> Cash In Store<br>
                 <input type="radio" name="payment"> Cash During Delivery
 
-                <button type="submit" class="submit-btn">Submit Order</button>    
+                <button type="submit" class="submit-btn">Submit Order</button> 
+                
+<script>
+document.querySelector('.order-form').addEventListener('submit', function () {
+  localStorage.removeItem('cart');
+});
+</script>
+
         </form>
         </main>
         
