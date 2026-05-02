@@ -63,10 +63,12 @@
         <main class="page-content">
             <h2 class="text-center mb-4">Order Details</h2>
             
-            <form class="order-form">
+            <form class="order-form"> id="orderForm">
+                
+             <div class="row">
                 <div class="col-md-6 mb-3">
-                <label>Last Name *</label>
-                <input type="text" required>
+                 <label>Last Name *</label>
+                 <input type="text" required>
                 </div>
                 
                  <div class="col-md-6 mb-3">
@@ -106,19 +108,19 @@
                 <input type="radio" name="payment"> Cash During Delivery
 
                 <button type="submit" class="submit-btn">Submit Order</button> 
-                
+ </form>                
 <script>
-document.querySelector('.order-form').addEventListener('submit', function () {
+
+Document.getElementById('orderForm').addEventListener('submit', function () {
   localStorage.removeItem('cart');
 });
-</script>
 
-        </form>
+</script>
+       
         </main>
         
     
-        
-
+ 
 <script>
 const cart = JSON.parse(localStorage.getItem('cart')) || [];
 const cartBox = document.getElementById('cart-items');
@@ -131,14 +133,18 @@ if (cart.length === 0) {
   cartBox.innerHTML = '<p>No products selected.</p>';
 } else {
   cart.forEach(item => {
-    total += item.price;
-    cartBox.innerHTML += `<p>${item.name} - P${item.price}
-</p>`;
+    const lineTotal = item.price * item.qty;
+    total += lineTotal;
+      
+  cartBox.innerHTML += `
+      <p>${item.name} × ${item.qty} — P${lineTotal}</p>
+    `;
   });
 }
 
 totalEl.textContent = total;
 </script>
+
  <footer>
         <p>&copy; 2026 BrightSightKids| Clear Vision For Little Eyes| All rights reserved</p>
      </footer>
