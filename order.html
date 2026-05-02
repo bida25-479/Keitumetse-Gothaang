@@ -85,6 +85,7 @@
                     <label>Phone number *</label>
                 <input type="text" required>
                </div>
+                </div>
                
                 <h4 class="section-title">Selected Products</h4>
                 <div id="cart-items" class="selected-box"></div>
@@ -101,7 +102,7 @@
                 <label> Delivery Address</label>
                 <textarea></textarea>
                 </div>
-                </div>
+                
           
 
                 <label>Payment Method</label>
@@ -112,7 +113,7 @@
  </form>                
 <script>
 
-Document.getElementById('orderForm').addEventListener('submit', function () {
+document.getElementById('orderForm').addEventListener('submit', function () {
   localStorage.removeItem('cart');
 });
 
