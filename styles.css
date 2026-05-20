@@ -103,6 +103,7 @@ header h1 {
 /*mobile responsiveness*/
 @media (max-width: 768px) {
     .hero-products{
+        flex-direction: column;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -114,7 +115,44 @@ header h1 {
     .hero-grid{
         grid-template-columns: 1fr;
     }
+    .arrival-grid{
+        flex-direction: column;
+        align-items: center;
+    }
+    .new-arrivals{
+        margin-top: -60px;
+    }
 }
+.new-arrivals{
+    margin-top: -120px;
+    background: white;
+    padding: 60px 20px;
+    margin-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(o,0,0,0.8)
+}
+.new-arrivals h2{
+    text-align: center;
+    margin-bottom: 30px
+}
+.arrival-grid{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.arrival-card{
+    background: #fff0f5;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    width: 180px;
+}
+.arrival-card img{
+    width: 100%;
+    border-radius: 10px;
+}  
 
 main{
     padding: 20px;
