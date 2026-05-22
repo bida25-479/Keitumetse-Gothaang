@@ -52,9 +52,9 @@ header h1 {
     align-items: center;
     gap: 60px;
     padding: 60px;
-    max-width: 1100px;
-    width: 95%;
+    width: 92%;
     margin: 40px auto;
+    margin-top: 30px;
     background: #fdf1e6;
     border-radius: 25px;
     animation: fadeUp 0.8s ease;
@@ -66,7 +66,7 @@ header h1 {
     }
     to{ 
         opacity: 1;
-        transform: translateY(20px);
+        transform: translateY(0);
     }
 }
 .about-text {
@@ -97,7 +97,7 @@ header h1 {
 
 .about-section {
     width: 90%;
-    margin: -40px auto 60px auto;
+    margin: -20px auto 60px;
     padding: 50px;
     text-align: center;
     background: white;
@@ -113,6 +113,9 @@ header h1 {
 .about-section p {
     color: #555;
     line-height: 1.7;
+}
+body{
+    background: #f5f6f8;
 }
 
 .split-section{
