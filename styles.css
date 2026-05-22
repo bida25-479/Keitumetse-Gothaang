@@ -560,6 +560,15 @@ small-boxes div{
     color: #666;
     margin-bottom: 20px;
 }
+
+.contact-intro {
+    max-width: 700px;        
+    margin: 30px auto;       
+    text-align: center;    
+    font-size: 1.1rem;
+    color: #555;
+}
+
 .peach-section{
     background: #FFF1E6;
     padding: 60px 20px;
