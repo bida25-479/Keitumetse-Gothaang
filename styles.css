@@ -121,6 +121,34 @@ header h1 {
     text-align: center;
 }
 
+
+.lens-card {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px;
+
+    background: #fff7f0; 
+    border-radius: 20px;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.lens-card h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.lens-card p {
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+}
+
+
 .faq-section {
     width: 90%;
     margin: 60px auto;
