@@ -90,11 +90,11 @@ header h1 {
 }
 /*product card*/
 .section-card{
-    background: #eef2f6;
+    background: #ffffff;
     padding: 18px;
     border-radius: 18px;
     text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08)
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     transition: transform 0.25s ease;
 }
 .section-card:hover{
