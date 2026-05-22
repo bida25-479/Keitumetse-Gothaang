@@ -154,7 +154,7 @@ header h1 {
     width: 100%;
     padding: 15px 20px;
     text-align: left;
-    background: white;
+    background: #f1f1f1;
     border: none;
     font-size: 15px;
     cursor: pointer;
@@ -169,7 +169,7 @@ header h1 {
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    background: #ffffff;
+    background: white;
     transition: max-height 0.3s ease;
     padding: 0 20px;
 }
@@ -180,6 +180,13 @@ header h1 {
 
 .faq-item.active .faq-answer {
     max-height: 200px;
+}
+.arrow{
+    background: #f4a261;
+    color: white;
+    border-radius: 50%
+    padding: 6px 10px;
+    font-size: 12px;
 }
 
 .split-section{
