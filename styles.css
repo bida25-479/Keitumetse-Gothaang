@@ -143,12 +143,14 @@ header h1 {
 .faq-item {
     background: #f8f8f8;
     margin-bottom: 15px;
+    border: 1px solid #eee;
     border-radius: 10px;
     overflow: hidden;
     transition: 0.3s;
 }
 
 .faq-question {
+    font-weight: 600;
     width: 100%;
     padding: 15px 20px;
     text-align: left;
