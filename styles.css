@@ -158,6 +158,7 @@ header h1 {
     width: 5px;
     background: #f4a261;
     border-radius: 5px;
+}
     
 
 .faq-question {
@@ -194,23 +195,29 @@ header h1 {
 
 .faq-item.active .faq-answer {
     max-height: 150px;
-    padding:L 10px 20px 15px;
+    padding: 10px 20px 15px;
 }
 .arrow{
     background: #f4a261;
     color: white;
-    border-radius: 50%
+    border-radius: 50%;
     padding: 6px 10px;
     font-size: 14px;
     width: 28px;
     height: 28px;
     display: flex;
     align-items: center;
-    justify-center: center;
+    justify-content: center;
     transition: 0.3s;
 }
 .faq-item.active .arrow {
     transform: rotate(90deg);
+    width: 28px;
+    height: 28px;
+    background: #f4a261;
+    color: white;
+    border-radius: 50%;
+    dispaly: flex;
 }
 .split-section{
     display: flex;
@@ -403,12 +410,6 @@ img{
 .age-info strong {
     display: block;
     font-size: 16px;
-}
-
-.arrow{
-    margin-left: auto;
-    font-size: 20px;
-    font-weight: bold;
 }
  
  .gender-title {
