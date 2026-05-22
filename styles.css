@@ -118,10 +118,6 @@ display: flex;
     line-height: 1.7;
     text-align: center;
 }
-body{
-    margin: 0;
-    background: #f5f6f8;
-}
 
 .split-section{
     display: flex;
@@ -201,7 +197,7 @@ body{
 
 main{
     padding: 20px;
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
 }
 main img{
