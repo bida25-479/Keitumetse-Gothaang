@@ -452,8 +452,8 @@ img{
 }
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr));
+    gap: 15px;
     margin-bottom: 40px;
 }
 
@@ -471,17 +471,29 @@ img{
     border: 1px solid #ddd;
     border-radius: 10px;
     position: relative;
-    padding: 20px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);   
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);   
 }
 
 .product-card img{
     width: 100%;
-    height: 180px;
+    height: 130px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 10px;
 }
+
+.product-card label {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.product-card select,
+.product-card input {
+    padding: 5px;        
+    font-size: 12px;
+}
+
 
 .product-name{
     margin-top: 8px;
@@ -512,6 +524,13 @@ h3 {
 small-boxes div{
     width: 180px;
 }
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
     
  /*contact page css*/
 .contact-form{
