@@ -784,7 +784,11 @@ border: 1px solid #ccc;
     cursor: pointer;
     transform: scale(1.02);  
     transition: 0.3s ease;
+}
 
+.feedback-form-card button:hover {
+    background: #e38b3a;  
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
