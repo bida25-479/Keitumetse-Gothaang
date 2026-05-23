@@ -59,41 +59,61 @@
         </nav>
     </header>
 
-    <div class="feedback-form">
+<section class="feedback-layout">
+
+  <!-- LEFT SIDE -->
+  <div class="feedback-left">
+    <h2>Share Your Feedback</h2>
+
+    <p>
+      Your experience matters to us. Help us improve our products and services 
+      by sharing your thoughts and suggestions.
+    </p>
+
+    <h4>Our Promise</h4>
+    <p>We carefully review every feedback submitted.</p>
+      
+<h4>Support</h4>
+    <p>We aim to respond within 24 hours.</p>
+  </div>
+
+  <!-- RIGHT SIDE (FORM) -->
+  <div class="feedback-form-card">
+
+    <h3>Feedback Form</h3>
+
+    <form>
+
+      <div class="form-row">
+        <div>
+          <label>Full Name</label>
+          <input type="text" required>
+            
+ </div>
+
+        <div>
+          <label>Phone Number</label>
+          <input type="tel" required>
+        </div>
+      </div>
+
+      <label>Products Purchased</label>
+      <input type="text" placeholder="e.g. Little Kids, Name of frame">
+
+      <label>Your Feedback</label>
+      <textarea rows="4" required></textarea>
         
-     <p class="feedback-intro">
-         We value your opinion and suggestions to help us improves our products.
-     </p>
-         
-        <div class="mb-3">
-            <label class="form-label">Full Name</label>
-            <input type="text" class="form-control" required>
-        </div>
+  <label>Suggestions for Improvement</label>
+      <textarea rows="4"></textarea>
 
-        <div class="mb-3">
-            <label class="form-label">Phone Number</label>
-            <input type="tel" class="form-control" required>
-        </div>
+      <button type="submit">Submit Feedback</button>
 
-        <div class="mb-3">
-            <label class="form-label">Products Purchased
-            <span class="example-text">(e.g. Little Kids, Name of frame) </span></label>
-            <input type="text" class="form-control"  required>
-        </div>
+    </form>
 
-        <div class="mb-3">
-            <label class="form-label">Your Feedback</label>
-            <textarea class="form-control" rows="4" required></textarea>
-        </div>
+  </div>
 
-         <div class="mb-3">
-        <label class="form-label">Suggestions for Improvement</label>
-        <textarea class="form-control" rows="4"></textarea>
-        </main>
+</section>
 
-        <button type="submit" class="btn btn-primary w-100">
-        Submit
-    </button>
 
     <footer>
         <p>&copy; 2026 BrightSightKids| Clear Vision For Little Eyes| All rights reserved</p>
