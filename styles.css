@@ -774,14 +774,17 @@ border: 1px solid #ccc;
 
 
 /* BUTTON */
-.feedback-form-card button:hover {
+.feedback-form-card button {
     width: 100%;
     padding: 12px;
-    background: #e38b3a;
+    background: #f4a261;
     color: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    transform: scale(1.02);  
+    transition: 0.3s ease;
+
 }
 
 @media (max-width: 768px) {
