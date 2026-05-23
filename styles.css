@@ -19,11 +19,12 @@ header{
 
 
 header h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: 600;
     font-family:'Poppins', sans-serif;
     margin: 0;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    color: #2c3e50
 }
 
 .bg-pink {
@@ -705,17 +706,19 @@ textarea {
 /* LEFT SIDE */
 .feedback-left {
     flex: 1;
+    padding-top: 60px;
 }
 
 .feedback-left h2 {
     font-size: 2.5rem;
-    color: #2c3e50;
+    color: #f4a261;
     margin-bottom: 15px;
 }
 
 .feedback-left p {
     color: #555;
-    line-height: 1.6;
+    font-size: 1.05rem;
+    line-height: 1.7;
     margin-bottom: 15px;
 }
 
@@ -768,6 +771,7 @@ border: 1px solid #ccc;
     outline: none;
     box-shadow: 0 0 0 2px rgba(244, 162, 97, 0.2);
 }
+
 
 /* BUTTON */
 .feedback-form-card button:hover {
