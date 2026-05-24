@@ -63,34 +63,34 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
 
             <section class="age-nav">
 
-               <a href="#" class="age-card" onclick="setAge('little')" >
+               <a href="#" class="age-card" onclick="setFilters('little')" >
                     <img src="https://github.com/bida25-479/Keitumetse-Gothaang/blob/main/Sunglasses.jpg?raw=true" alt="Pammy">
-                    <div class="age-info">
-                        <span> 3-7 years old</span>
-                        <strong>Little Kids</strong>
+                    <div class="age-info">              
+                       &lt;span&gt;3-7 years old&lt;/span&gt;
+                       &lt;strong&gt;Little Kids&lt;/strong&gt;
                     </div>
-                    <span class="arrow">&rarr;</span>
+                    <button class="age-btn">View Frames</button>
                 </a>
 
 
-               <a href="#" class="age-card" onclick="setAge('big')">
+               <a href="#" class="age-card" onclick="setFilters('big')">
                     <img src="https://github.com/bida25-479/Keitumetse-Gothaang/blob/main/download%20(8).jpg?raw=true" alt="Jimmy">
                     <div class="age-info">
-                        <span> 8-12 years old</span>
-                        <strong> Big Kids</strong>
+                       &lt;span&gt;3-7 years old&lt;/span&gt;
+                       &lt;strong&gt;Little Kids&lt;/strong&gt; 
                     </div>
-                    <span class="arrow">&rarr;</span>
+                   <button class="age-btn">View Frames</button>
                     </a>
 
 
                
-           <a href="#" class="age-card" onclick="setAge('teens')">
+           <a href="#" class="age-card" onclick="setFilters('teens')">
                 <img src="https://github.com/bida25-479/Keitumetse-Gothaang/blob/main/The%20Lincoln.jpg?raw=true" alt="browey">
                 <div class="age-info">
-                    <span> 13-17 years old</span>
-                    <strong> Teens</strong>
+                   &lt;span&gt;3-7 years old&lt;/span&gt;
+                   &lt;strong&gt;Little Kids&lt;/strong&gt; 
                 </div>
-                <span class="arrow">&rarr;</span>
+               <button class="age-btn">View Frames</button>
                 </a>
             </section>
             
@@ -98,20 +98,12 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
 
     <h2>Frames for Kids</h2>
     
-<div class="filter-buttons">
-    <button onclick="filterProducts('all', 'all')">All</button>
-</div>
-
-<div class="filter-buttons">
-    <button onclick="filterProducts(currentAge, 'all')">All Genders</button>
-    <button onclick="filterProducts(currentAge, 'girls')">Girls</button>
-    <button onclick="filterProducts(currentAge, 'boys')">Boys</button>
-    <button onclick="filterProducts(currentAge, 'unisex')">Unisex</button>
-</div>
-
-
-
-    
+<div class="gender-filter">
+    <button onclick="filterGender('all')">All</button>
+    <button onclick="filterGender('girls')">Girls</button>
+    <button onclick="filterGender('boys')">Boys</button>
+    <button onclick="filterGender('unisex')">Unisex</button>
+</div>  
 
   <div class="product-grid">
             
@@ -711,37 +703,51 @@ document.querySelectorAll('.product-card').forEach(card => {
 });
 </script>
 
-
 <script>
-let currentAge = 'all';
-let currentGender = 'all';
+let currentAge age;let currentAge = "all";
+    currentGender = "all"; // reset gender when changing age
 
-function setAge(age) {
-    currentAge = age;
-    filterProducts(currentAge, currentGender);
+    
+    const genderFilter = document.querySelector(".gender-filter");
+    if (genderFilter) {
+        genderFilter.style.display = "flex";
+    }
+
+    applyFilters();
 }
 
-function filterProducts(age, gender) {
-    currentGender = gender;
 
-    const products = document.querySelectorAll('.product-card');
+function filterGender(gender) {
+    currentGender = gender;
+    applyFilters();
+}
+
+
+function applyFilters() {
+    const products = document.querySelectorAll(".product-card");
     
- products.forEach(product => {
+products.forEach(product => {
         const productAge = product.dataset.age;
         const productGender = product.dataset.gender;
 
-        const ageMatch = (age === 'all' || productAge === age);
-        const genderMatch = (gender === 'all' || productGender === gender);
+        
+        const ageMatch =
+            currentAge === "all" || productAge === currentAge;
+
+       
+        const genderMatch =
+            currentGender === "all" || productGender === currentGender;
+    
 
         if (ageMatch && genderMatch) {
-            product.style.display = 'block';
+            product.style.display = "block";
         } else {
-            
-product.style.display = 'none';
+            product.style.display = "none";
         }
     });
 }
 </script>
+
 
 <footer>
     <p>&copy; 2026 BrightSight Kids| Clear vision for little eyes| All rights reserved</p>
