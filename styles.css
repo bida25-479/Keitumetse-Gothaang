@@ -39,6 +39,12 @@ header h1 {
     margin: 0;
     border-radius: 0 !important;  
 }
+
+.navbar-brand {
+    color: white !important;   
+    font-weight: 600;
+}
+
 .navbar-nav .nav-link{
     color: white !important;
     margin-right: 15px;
@@ -338,7 +344,8 @@ header h1 {
 }
 
 .hero-content {
-    margin-top: 60px;
+    margin-top: 80px;
+    padding-top: 10px;
 }
 
 .hero-content h1 {
