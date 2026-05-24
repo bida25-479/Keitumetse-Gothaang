@@ -70,8 +70,8 @@ header h1 {
     margin: 40px auto;   
     padding: 40px 60px;
     background: #fdf1e6;
+    border: 2px solid #8B5E3C; 
     border-radius: 25px;
-    border: 2px solid #8B5E3C
     animation: fadeUp 0.8s ease;
 }
 
@@ -112,7 +112,8 @@ header h1 {
     max-height: 300px;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    border: 2px solid #8B5E3C;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
 }
 
 .about-section {
@@ -143,8 +144,8 @@ header h1 {
     margin: 40px auto;
     padding: 40px;
     background: #fff7f0; 
+    border: 2px solid #8B5E3C;
     border-radius: 20px;
-    border: 2px solid #8B5E3C
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     text-align: center;
 }
