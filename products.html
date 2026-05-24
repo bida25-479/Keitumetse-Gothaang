@@ -63,7 +63,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
 
             <section class="age-nav">
 
-               <a href="#" class="age-card" onclick="filterSection('little-kids')">
+               <a href="#" class="age-card" onclick="filterProducts('little')">
                     <img src="https://github.com/bida25-479/Keitumetse-Gothaang/blob/main/Sunglasses.jpg?raw=true" alt="Pammy">
                     <div class="age-info">
                         <span> 3-7 years old</span>
@@ -73,7 +73,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                 </a>
 
 
-               <a href="#" class="age-card" onclick="filterSection('big-kids')">
+               <a href="#" class="age-card" onclick="filterProducts('big')">
                     <img src="https://github.com/bida25-479/Keitumetse-Gothaang/blob/main/download%20(8).jpg?raw=true" alt="Jimmy">
                     <div class="age-info">
                         <span> 8-12 years old</span>
@@ -84,7 +84,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
 
 
                
-           <a href="#" class="age-card" onclick="filterSection('teens')">
+           <a href="#" class="age-card" onclick="filterProducts('teens')">
                 <img src="https://github.com/bida25-479/Keitumetse-Gothaang/blob/main/The%20Lincoln.jpg?raw=true" alt="browey">
                 <div class="age-info">
                     <span> 13-17 years old</span>
@@ -94,8 +94,8 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                 </a>
             </section>
             
-           
 <section class="all-products">
+
     <h2>Frames for Kids</h2>
 
     <div class="filter-buttons">
@@ -105,18 +105,8 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
         <button onclick="filterProducts('teens')">Teens</button>
     </div>
 
-    <div class="product-grid">
- 
-
-            <section id="little-kids" class="collection-section filter-section">
-                <h2>Little Kids (3-7 years old) </h2>
-                <p>
-                    Comfortable, durable and lightweight frames designed for endless play.
-                </p>
-                <h3 class="gender-title">Girls Frames</h3>
-                
-                <div class="product-grid">
-                    
+  <div class="product-grid">
+            
                 <div class="product-card" data-category="little">
                     <div class="top-check">
                     <input type="checkbox"
@@ -195,9 +185,6 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                 </div>
                 </div>
                    
-                <h3 class="gender-title">Boys Frames</h3>
-                      
-                  <div class="product-grid">
                       
                     <div class="product-card" data-category="little">
                     <div class="top-check">
@@ -223,7 +210,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
               </div>
                     </div>
                     
-                 <div class="product-card">
+                 <div class="product-card" data-category="little">>
                     <div class="top-check">
                     <input type="checkbox"
                       class="add-to-cart"
@@ -273,14 +260,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
               </div>
              </div>
                   </div>
-    </section>
-            
-            <section id="big-kids" class="collection-section filter-section">">
-                <h2>Big Kids (8-12 years old)</h2>
-
-                <h3 class="gender-title"> Girls Frames</h3>
-                
-                <div class="product-grid">
+    </section>    
                     
                  <div class="product-card" data-category="big">
                     <div class="top-check">
@@ -446,13 +426,6 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
           </div>
             </div>
         </section>
-
-            <section id="teens" class="collection-section filter-section">">
-                <h2> Teens (13-17 years old) </h2>
-
-                <h3 class="gender-title"> Girls Frames</h3>
-                
-                 <div class="product-grid">
                      
                  <div class="product-card" data-category="teens">
                     <div class="top-check">
@@ -532,11 +505,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                     <input type="number" class="qty" value="1" min="1">
               </div>
         </div>
-                 </div>
 
-                <h3 class="gender-title"> Boys Frames</h3>
-                     
-             <div class="product-grid">   
                  
              <div class="product-card" data-category="teens">
                   <div class="top-check">
@@ -615,10 +584,6 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
               </div>
             </div>
              </div>
-
-                <h3 class="gender-title"> Unisex Frames</h3>
-                     
-             <div class="product-grid">  
                  
                  <div class="product-card" data-category="teens">
                       <div class="top-check">
