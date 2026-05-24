@@ -21,6 +21,7 @@ header{
     margin: 0;
     padding: 0;
     position: relative;
+    margin-bottom: 0;
 }
 
 
@@ -372,12 +373,12 @@ header h1 {
 }
 
 .hero-content {
-    margin-top: 15px;
+    margin-top: 40px;
     padding-top: 5px;
 }
 
 .hero-content h1 {
-    font-size: 30 px;
+    font-size: 30px;
     font-weight: 400;
     color: #8B5E3C;
     letter-spacing: 1px;
