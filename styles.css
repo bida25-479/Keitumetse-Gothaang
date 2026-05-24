@@ -71,6 +71,7 @@ header h1 {
     padding: 40px 60px;
     background: #fdf1e6;
     border-radius: 25px;
+    border: 2px solid #8B5E3C
     animation: fadeUp 0.8s ease;
 }
 
@@ -141,10 +142,9 @@ header h1 {
     max-width: 1100px;
     margin: 40px auto;
     padding: 40px;
-
     background: #fff7f0; 
     border-radius: 20px;
-
+    border: 2px solid #8B5E3C
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     text-align: center;
 }
@@ -272,7 +272,7 @@ header h1 {
     margin: 60px auto;
     background: transparent;
     border-radius: 20px;
-    border: 1px solid #e4c9ae;
+    border: 2px solid #8B5E3C
     box-shadow: 0 4px 12px rgba(0,0,0,0.03);
 }
 
@@ -309,6 +309,7 @@ header h1 {
 /*product card*/
 .section-card{
     background: #ffffff;
+    border: 2px solid #8B5E3C
     padding: 18px;
     border-radius: 18px;
     text-align: center;
