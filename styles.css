@@ -192,6 +192,26 @@ header h1 {
     color: #2c3e50;
 }
 
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;   /* ✅ 2 columns */
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.faq-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .faq-grid {
+        grid-template-columns: 1fr;   /* ✅ stack on mobile */
+    }
+}
+
 .faq-container {
     max-width: 800px;
     margin: auto;
