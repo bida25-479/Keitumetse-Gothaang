@@ -534,12 +534,15 @@ img{
     margin-top: 15px;
     padding: 10px 20px;
     background-color: #f4a261;
-    border: none;
     color: white;
+    border: none;
     border-radius: 25px;
     font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
     cursor: pointer;
-    transition: all 0.3s ease;
+
+   
 }
 
 .age-info {
@@ -547,7 +550,7 @@ img{
 }
 
 .age-btn:active {
-    transform: scale(0.97);
+    transform: scale(0.92);
     padding: 10px 20px;
     background-color: #f4a261; 
     color: white;
@@ -555,6 +558,7 @@ img{
     border-radius: 25px;
     font-size: 14px;
     font-weight: 500;
+    box-shadow: 0 1px 3px rgba;
     cursor: pointer;
 }
 
