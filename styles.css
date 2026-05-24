@@ -8,13 +8,11 @@ body {
 }
 
 header{
-    background-color: #ffd6a5;
-    color: #2c3e50;
-    padding: 20px 0;
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-image: ("https://github.com/bida25-479/Keitumetse-Gothaang/blob/main/Premium%20Vector%20_%20Orange%20Wave%20Background%20Abstract.jpg?raw=true");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 
