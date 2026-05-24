@@ -285,11 +285,6 @@ header h1 {
 .faq-answer p {
      margin-top: 10px;  
 }
-
-.faq-item.active .faq-answer {
-    max-height: 150px;
-}
-
 .arrow{
     background: #f4a261;
     color: white;
