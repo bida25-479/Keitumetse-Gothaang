@@ -121,8 +121,9 @@ header h1 {
     margin: 60px auto;   
     padding: 50px;
     background: #fff7f0;
+    border: 2px solid #8B5E3C;  
     border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.10);  
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);  
 }
 
 .about-section h2 {
