@@ -575,7 +575,29 @@ img{
 
 
 .gender-filter {
-    display: none;   /* hidden initially */
+    display: none;
+    justify-content: center; 
+    gap: 12px;
+    margin: 25px 0; 
+}
+
+.gender-filter button {
+    padding: 8px 18px;
+    border: none;
+    background: #f4a261;  
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.gender-filter button:hover {
+    background: #e38b4f;
+}
+
+.gender-filter button.active {
+    background: #8B5E3C;
 }
 
 .filter-section {
@@ -655,6 +677,21 @@ img{
 .all-products h2 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #8B5E3C;
+    margin: 40px 0 20px;
+    position: relative;
+}
+
+.all-products h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #f4a261;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 10px;
 }
 
 .gender-title {
@@ -667,25 +704,18 @@ img{
     letter-spacing: 1px;
     
 }
-.product-grid img{
-    width: 100%;
-    height: 130px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-/*for product cards accross all pages*/
+
+/*for product cards inside products page*/
 .product-card{
-    background: #fff;
+    background: #ffffff;
     border: 1px solid #eee;
     border-radius: 14px;
     position: relative;
-    padding: 12px;
+    padding: 16px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);  
     text-align: center;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 .product-card:hover {
     transform: translateY(-6px);
@@ -695,15 +725,17 @@ img{
 
 .product-card img{
     width: 100%;
-    height: 130px;
+    height: 180px;
     object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 10px;
-     transition: transform 0.3s ease;
+    border-radius: 12px;
+    border: 2px solid #8B5E3C; 
+    margin-bottom: 12px;
+    background: transparent;
+    transition: transform 0.3s ease;
 }
 
 .product-card:hover img {
-    transform: scale(1.08);
+    transform: scale(1.04);
 }
 
 .product-card select,
@@ -738,8 +770,12 @@ img{
     margin-top: 4px;
 }
 
-.product-card h3 {.product-card h32c3e50;                  
-   margin: 8px 0 3px;
+.product-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #4b2e2e;
+    margin-top: 10px;
 }
 
 .product-card p {
@@ -747,7 +783,8 @@ img{
     font-size: 15px;
     text-align: center;
     font-weight: 600;
-    color: #8B5E3C;    
+    color: #8B5E3C;
+    margin-top: 5px;
 }
 
 .product-options {
@@ -785,7 +822,8 @@ small-boxes div{
 }
 
     
- /*contact page css*/
+
+/*contact page css*/
 .contact-form{
     max-width: 600px;
     margin: auto;
