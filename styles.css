@@ -422,7 +422,7 @@ img{
     display: flex;
     align-items: center;
     gap: 15px;
-    background: white;
+    background: fff7f0;
     border-radius: 14px;
     padding: 12px;
     text-decoration: none;
@@ -431,30 +431,46 @@ img{
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     transition: all 0.3s ease;
  }
+.age-card:hover {
+    transform: translateY(-8px) scale(1.02);   
+    background: #f4a261;  
+    color: white;         
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.age-card:hover img {
+    transform: scale(1.05);
+}
 
 .age-card .arrow {
     transition: transform 0.3s ease, background 0.3s;
+    background: #f4a261;
+    color: white;
 }
 
 .age-card:hover .arrow {
     transform: translateX(5px); 
+    background: white;
     background: #f4a261;
+    color: f4a261;
 }
 
 .age-card:hover{
     transform: translateY(-6px);
     box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    color: white;
 }
 .age-card img{
     width: 70px;
     height: 70px;
-    border-radius: 10px;
+    border-radius: 12px;
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .age-info span{
     font-size: 14px;
-    color: #777;
+    color: white;
 }
 
 .age-info strong {
@@ -532,6 +548,7 @@ img{
     padding: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);  
     text-align: center;
+    overflow: hidden;
 }
 
 .product-card img{
@@ -540,6 +557,11 @@ img{
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 10px;
+     transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.08);
 }
 
 .product-card select,
