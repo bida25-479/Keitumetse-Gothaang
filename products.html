@@ -94,6 +94,19 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                 </a>
             </section>
             
+           
+<section class="all-products">
+    <h2>Frames for Kids</h2>
+
+    <div class="filter-buttons">
+        <button onclick="filterProducts('all')">All</button>
+        <button onclick="filterProducts('little')">Little Kids</button>
+        <button onclick="filterProducts('big')">Big Kids</button>
+        <button onclick="filterProducts('teens')">Teens</button>
+    </div>
+
+    <div class="product-grid">
+ 
 
             <section id="little-kids" class="collection-section filter-section">
                 <h2>Little Kids (3-7 years old) </h2>
@@ -104,7 +117,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                 
                 <div class="product-grid">
                     
-                <div class="product-card">
+                <div class="product-card" data-category="little">
                     <div class="top-check">
                     <input type="checkbox"
                     class="add-to-cart"
@@ -130,7 +143,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                 </div>
                 </div>
 
-                 <div class="product-card">
+                 <div class="product-card" data-category="little">
                     <div class="top-check">
                     <input type="checkbox"
                     class="add-to-cart"
@@ -156,7 +169,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
               </div>
                  </div>
 
-                  <div class="product-card">
+                  <div class="product-card" data-category="little">
                     <div class="top-check">
                     <input type="checkbox"
                     class="add-to-cart"
@@ -186,7 +199,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                       
                   <div class="product-grid">
                       
-                    <div class="product-card">
+                    <div class="product-card" data-category="little">
                     <div class="top-check">
                     <input type="checkbox"
                     class="add-to-cart"
@@ -235,7 +248,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
               </div>
                  </div>
 
-                 <div class="product-card">
+                 <div class="product-card" data-category="little">
                     <div class="top-check">
                     <input type="checkbox"
                      class="add-to-cart"
@@ -269,7 +282,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                 
                 <div class="product-grid">
                     
-                 <div class="product-card">
+                 <div class="product-card" data-category="big">
                     <div class="top-check">
                     <input type="checkbox"
                      class="add-to-cart"
@@ -296,7 +309,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                  </div>
 
 
-                 <div class="product-card">
+                 <div class="product-card" data-category="big">
                     <div class="top-check">
                     <input type="checkbox"
                      class="add-to-cart"
@@ -323,7 +336,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                  </div>
 
 
-                 <div class="product-card">
+                 <div class="product-card" data-category="big">
                     <div class="top-check">
                     <input type="checkbox"
                      class="add-to-cart"
@@ -354,7 +367,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
 
             <div class="product-grid">
                 
-                <div class="product-card">
+                <div class="product-card" data-category="big">
                     <div class="top-check">
                     <input type="checkbox"
                      class="add-to-cart"
@@ -380,7 +393,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                 </div>
 
 
-                <div class="product-card">
+                <div class="product-card" data-category="big">
                     <div class="top-check">
                     <input type="checkbox"
                      class="add-to-cart"
@@ -406,7 +419,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                 </div>
 
 
-               <div class="product-card">
+               <div class="product-card" data-category="big">
                     <div class="top-check">
                     <input type="checkbox"
                      class="add-to-cart"
@@ -441,7 +454,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                 
                  <div class="product-grid">
                      
-                 <div class="product-card">
+                 <div class="product-card" data-category="teens">
                     <div class="top-check">
                     <input type="checkbox"
                     class="add-to-cart"
@@ -467,7 +480,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                  </div>
 
 
-                 <div class="product-card">
+                 <div class="product-card" data-category="teens">
                     <div class="top-check">
                     <input type="checkbox"
                      class="add-to-cart"
@@ -494,7 +507,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                  </div>
 
 
-                 <div class="product-card">
+                 <div class="product-card" data-category="teens">
                     <div class="top-check">
                     <input type="checkbox"
                      class="add-to-cart"
@@ -525,7 +538,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                      
              <div class="product-grid">   
                  
-             <div class="product-card">
+             <div class="product-card" data-category="teens">
                   <div class="top-check">
                     <input type="checkbox"
                         class="add-to-cart"
@@ -551,7 +564,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
              </div>
 
 
-               <div class="product-card">
+               <div class="product-card" data-category="teens">
                     <div class="top-check">
                     <input type="checkbox"
                     class="add-to-cart"
@@ -577,7 +590,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                </div>
 
 
-                 <div class="product-card">
+                 <div class="product-card" data-category="teens">
                       <div class="top-check">
                     <input type="checkbox"
                     class="add-to-cart"
@@ -607,7 +620,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                      
              <div class="product-grid">  
                  
-                 <div class="product-card">
+                 <div class="product-card" data-category="teens">
                       <div class="top-check">
                     <input type="checkbox"
                      class="add-to-cart"
@@ -634,7 +647,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                  </div>
 
 
-                <div class="product-card">
+                <div class="product-card" data-category="teens">
                      <div class="top-check">
                     <input type="checkbox"
                         class="add-to-cart"
@@ -660,7 +673,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                 </div>
 
 
-                 <div class="product-card">
+                 <div class="product-card" data-category="teens">
                       <div class="top-check">
                     <input type="checkbox"
                     class="add-to-cart"
@@ -728,21 +741,29 @@ document.querySelectorAll('.product-card').forEach(card => {
   }
 });
 </script>
-        
+
 <script>
-function filterSection(sectionId) {
-    const sections = document.querySelectorAll('.filter-section');
+function filterProducts(category) {
+    const products = document.querySelectorAll('.product-card');
 
-    // hide all
-    sections.forEach(section => {
-        section.style.display = 'none';
+    products.forEach(product => {
+        if (category === 'all') {
+            product.style.display = 'block';
+        } else {
+            if (product.dataset.category === category) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+            
+      }
     });
-
-    // show selected
-    document.getElementById(sectionId).style.display = 'block';
 }
 </script>
+
+
         
+
 
 <footer>
     <p>&copy; 2026 BrightSight Kids| Clear vision for little eyes| All rights reserved</p>
