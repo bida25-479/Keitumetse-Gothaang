@@ -964,9 +964,10 @@ small-boxes div{
         margin-bottom: 20px;
 }
 .info-item{
-    display: block;
-    gap: 14px;
-    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
     font-size: 15px;
     color: #333;
 }
