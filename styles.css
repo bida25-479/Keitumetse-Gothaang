@@ -323,11 +323,8 @@ header h1 {
     width: 100%;
     height: 380px;
     object-fit: cover;
-    object-position: top;
+    object-position: center top;
     border-radius: 16px;
-}
-
-.hero-image img {
     filter: brightness(0.95);
 }
 
