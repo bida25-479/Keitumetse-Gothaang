@@ -497,26 +497,34 @@ img{
     display: flex;
     align-items: center;
     gap: 15px;
-    background: #fff7f0;
+    background: #ffffff;
+    border: 2px solid #8B5E3C
     border-radius: 14px;
     padding: 20px;
     text-decoration: none;
     color: black;
-    width: 280px;
+    width: 240px;
+    text-align: center;
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     transition: all 0.3s ease;
     justify-content: space-between;
  }
 .age-card:hover {
-    transform: translateY(-8px) scale(1.02);   
-    background: #f4a261;  
-    color: white;         
-    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    transform: translateY(-6px);         
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
 }
 
 .age-card.active {
-    border: 2px solid #f4a261;
-    background-color: #fff5ef;
+    border: 2px solid #e4955c;
+    background-color: #fff6ef;
+}
+.age-card img{
+    width: 100%;
+    height: 140px;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    margin-bottom: 15px;
 }
 
 .age-card:hover img {
@@ -524,36 +532,33 @@ img{
 }
 
 .age-btn {
-    padding: 8px 14px;
-    border: none;
-    background-color: #f4a261;
-    color: white;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background: transparent;
+    border: 1.5px solid #8B5E3C;
+    color: #8B5E3C;
     border-radius: 8px;
+    font-size: 14px;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .age-btn:hover {
-    background-color: #e76f51;
-}
-
-
-
-.age-card img{
-    width: 70px;
-    height: 70px;
-    border-radius: 12px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    background-color: #8B5E3C;
+    color: white;
 }
 
 .age-info span{
-    font-size: 14px;
-    color: white;
+    font-size: 13px;
+    color: #9c9c9c;
+    display: block;
 }
 
 .age-info strong {
     display: block;
-    font-size: 16px;
+    font-size: 18px;
+    color: #4b2e2e;
+    margin-top: 4px;
 }
  
  .gender-title {
