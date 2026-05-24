@@ -865,14 +865,42 @@ small-boxes div{
     }
 }
 
-    
-
 /*contact page css*/
 .contact-form{
-    max-width: 600px;
+    width: 100%;
     margin: auto;
     margin-bottom: 60px;
 }
+
+.contact-card {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #fff7f0; 
+    border: 2px solid #8B5E3C;   /* ✅ brown border */
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.contact-heading {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    color: #8B5E3C;
+    margin-bottom: 25px;
+}
+
+.contact-heading::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #f4a261;
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 5px;
+}
+
+
 .form-control:focus{
     border-color: #f4a261;
     box-shadow: 0 0 0 0.2rem rgba(244,162,97,0.25);
@@ -885,6 +913,7 @@ small-boxes div{
     text-align: center;
     font-weight: 600;
     margin-top: 40px;
+    
 }
 .required{
     color: #f4a261;
