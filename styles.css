@@ -580,10 +580,6 @@ img{
 }
 
 
-
-
-
-
 .collection-section {
     padding: 30px;
     max-width: 1100px;
@@ -626,6 +622,11 @@ img{
     background: #f4a261;
     margin-top: 6px;
     border-radius: 3px;
+}
+
+.all-products h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .gender-title {
