@@ -937,12 +937,15 @@ small-boxes div{
     background: #FFF1E6;
     padding: 60px 20px;
     margin-top: 50px;
+    display: flex;                 
+    justify-content: center;     
+    align-items: center; 
     position: relative;
 }
 .info-box{
     background: #ffffff;
     border-radius: 14px;
-    padding: 28px;
+    padding: 30px;
     max-width: 420px;
     margin: auto;
     box-shadow: 0 12px 30px rgba(0,0,0,0.08);
