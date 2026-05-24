@@ -8,7 +8,8 @@ body {
     line-height: 1.6;
 }
 h1, h2 {
-    color: #8B5E3C
+    color: #8B5E3C;
+}
 h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -343,7 +344,7 @@ header h1 {
 .hero-content h1 {
     font-size: 42px;
     font-weight: 600;
-    color: #2c3e50;
+    color: #8B5E3C;
     letter-spacing: 0.5px;
     margin-bottom: 15px;
 }
@@ -516,7 +517,6 @@ img{
 .age-card:hover .arrow {
     transform: translateX(5px); 
     background: white;
-    background: #f4a261;
     color: #f4a261;
 }
 
@@ -727,7 +727,7 @@ small-boxes div{
 }
 .contact-title {
     text-align: center;
-    font-weight: 600px;
+    font-weight: 600;
     margin-top: 40px;
 }
 .required{
