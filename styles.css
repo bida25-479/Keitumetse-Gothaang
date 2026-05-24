@@ -370,15 +370,16 @@ header h1 {
     object-position: center top;
     border-radius: 16px;
     filter: brightness(0.95);
+    display: block;
 }
 
 .hero-content {
-    margin-top: 40px;
-    padding-top: 5px;
+    margin-top: 45px;
+    padding-top: 0;
 }
 
 .hero-content h1 {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 400;
     color: #8B5E3C;
     letter-spacing: 1px;
