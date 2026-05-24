@@ -120,6 +120,7 @@ header h1 {
 
 .about-section {
     flex: 1;  
+    min-width: 0;
     padding: 50px;
     background: #fff7f0;
     border: 2px solid #8B5E3C;
@@ -132,6 +133,7 @@ header h1 {
     gap: 30px;
     max-width: 1100px;
     margin: 60px auto;
+    align-items: stretch;
 }
 @media (max-width: 768px) {
     .about-row {
