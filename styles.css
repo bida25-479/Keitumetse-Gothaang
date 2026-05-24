@@ -554,6 +554,11 @@ img{
     color: #444;
 }
 
+.filter-section {
+    transition: all 0.3s ease;
+}
+
+
 .collection-section {
     padding: 30px;
     max-width: 1100px;
