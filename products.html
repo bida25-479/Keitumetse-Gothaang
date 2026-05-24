@@ -63,7 +63,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
 
             <section class="age-nav">
 
-               <a href="#" class="age-card" onclick="setFilters('little')" >
+               <a href="#" class="age-card" onclick="setFilters('little', event)" >
                     <img src="https://github.com/bida25-479/Keitumetse-Gothaang/blob/main/Sunglasses.jpg?raw=true" alt="Pammy">
                     <div class="age-info">              
                        <span>3-7 years old</span>
@@ -73,7 +73,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                 </a>
 
 
-               <a href="#" class="age-card" onclick="setFilters('big')">
+               <a href="#" class="age-card" onclick="setFilters('big', event)">
                     <img src="https://github.com/bida25-479/Keitumetse-Gothaang/blob/main/download%20(8).jpg?raw=true" alt="Jimmy">
                     <div class="age-info">
                       <span>8-12 years old</span>
@@ -84,7 +84,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
 
 
                
-           <a href="#" class="age-card" onclick="setFilters('teens')">
+           <a href="#" class="age-card" onclick="setFilters('teens', event)">
                 <img src="https://github.com/bida25-479/Keitumetse-Gothaang/blob/main/The%20Lincoln.jpg?raw=true" alt="browey">
                 <div class="age-info">
                   <span>13-17 years old</span> 
@@ -397,7 +397,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                 </div>
 
 
-               <div class="product-card" data-category="big" data-gender="boys"">
+               <div class="product-card" data-category="big" data-gender="boys">
                     <div class="top-check">
                     <input type="checkbox"
                      class="add-to-cart"
@@ -703,39 +703,49 @@ document.querySelectorAll('.product-card').forEach(card => {
 });
 </script>
 
+
 <script>
 let currentAge = "all";
-let currentGender = "all"; 
+let currentGender = "all";
 
-function setFilters(age) {
+// ✅ AGE CARD CLICK
+function setFilters(age, event) {
+    event.preventDefault(); // ✅ stops page jumping
+
     currentAge = age;
     currentGender = "all";
 
-    
+    // ✅ Show gender filter
     const genderFilter = document.querySelector(".gender-filter");
-    if (genderFilter) {
+    
+if (genderFilter) {
         genderFilter.style.display = "flex";
     }
 
+    // ✅ Highlight active card
+    document.querySelectorAll('.age-card').forEach(card => {
+        card.classList.remove('active');
+    });
+
+    event.currentTarget.classList.add('active');
+
     applyFilters();
 }
-
-
+    
 function filterGender(gender) {
     currentGender = gender;
     applyFilters();
 }
 
-
+// ✅ APPLY FILTERS
 function applyFilters() {
     const products = document.querySelectorAll(".product-card");
-    
-products.forEach(product => {
+
+    products.forEach(product => {
         const productAge = product.dataset.category;
         const productGender = product.dataset.gender;
-
-  
-const ageMatch = (currentAge === "all" || productAge === currentAge);
+        
+ const ageMatch = (currentAge === "all" || productAge === currentAge);
         const genderMatch = (currentGender === "all" || productGender === currentGender);
 
         if (ageMatch && genderMatch) {
@@ -743,8 +753,7 @@ const ageMatch = (currentAge === "all" || productAge === currentAge);
         } else {
             product.style.display = "none";
         }
-    
-  });
+    });
 }
 </script>
 
