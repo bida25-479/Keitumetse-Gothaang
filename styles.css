@@ -1091,11 +1091,44 @@ border: 1px solid #ccc;
     border-radius: 8px;
     text-decoration: none;
 }
+
+.next-btn {
+    padding: 12px 24px;
+    background-color: #f4a261;   
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    transition: transform 0.2s ease;
+}
+.next-btn:active {
+    transform: scale(0.95);
+}
+.order-btn {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+
+
+    
+
 footer{
     width: 100%;
-    background-color:#ffd6a5;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     margin-top: 60px;
+    background-color: #8B5E3C;
+}
+
+footer p {
+    margin: 0;
+    color: #ffffff;  
+    font-size: 14px;
+    letter-spacing: 0.5px;
 }
 
