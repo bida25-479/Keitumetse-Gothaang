@@ -533,19 +533,13 @@ img{
 .age-btn {
     margin-top: 15px;
     padding: 10px 20px;
-    background-color: #f4a261
+    background-color: #f4a261;
     border: none;
     color: white;
     border-radius: 25px;
     font-size: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
-}
-
-.age-btn:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
-    background-color: #f4a261;
 }
 
 .age-info {
