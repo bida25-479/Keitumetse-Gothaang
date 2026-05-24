@@ -10,6 +10,7 @@ body {
 header{
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 
@@ -21,23 +22,14 @@ header h1 {
     letter-spacing: 2px;
     color: #2c3e50
 }
-
-header::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.7);
-}
-
-header * {
-    position: relative;
-    z-index: 1;
-}
-
 .bg-pink {
     background-color: rgba(255, 214, 165, 0.85) !important;
 }
 
+.navbar {
+    margin: 0;
+    border-radius: 0 !important;  
+}
 .navbar-nav .nav-link{
     color: #2c3e50 !important;
     margin-right: 15px;
@@ -487,7 +479,7 @@ img{
     display: flex;
     align-items: center;
     gap: 15px;
-    background: fff7f0;
+    background: #fff7f0;
     border-radius: 14px;
     padding: 12px;
     text-decoration: none;
@@ -517,14 +509,9 @@ img{
     transform: translateX(5px); 
     background: white;
     background: #f4a261;
-    color: f4a261;
+    color: #f4a261;
 }
 
-.age-card:hover{
-    transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
-    color: white;
-}
 .age-card img{
     width: 70px;
     height: 70px;
