@@ -7,6 +7,8 @@ body {
     padding: 0;
     line-height: 1.6;
 }
+h1, h2 {
+    color: #8B5E3C
 h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -29,7 +31,7 @@ header h1 {
     color: #2c3e50
 }
 .bg-pink {
-    background-color: rgba(255, 214, 165, 0.85) !important;
+    background-color: #8B5E3C !important;
 }
 
 .navbar {
@@ -37,7 +39,7 @@ header h1 {
     border-radius: 0 !important;  
 }
 .navbar-nav .nav-link{
-    color: #2c3e50 !important;
+    color: white !important;
     margin-right: 15px;
     transition: background-color 0.3s, color 0.3s;
     border-radius: 5px;
@@ -45,7 +47,7 @@ header h1 {
 }
 .navbar-nav .nav-link:hover{
     background-color: lightpink !important;
-    color: #fff !important;
+    color: #f4a261 !important;
     text-decoration: underline;
 }
 .navbar-nav .nav-link.active{
