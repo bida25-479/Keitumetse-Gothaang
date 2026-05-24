@@ -66,8 +66,8 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                <a href="#" class="age-card" onclick="setFilters('little')" >
                     <img src="https://github.com/bida25-479/Keitumetse-Gothaang/blob/main/Sunglasses.jpg?raw=true" alt="Pammy">
                     <div class="age-info">              
-                       &lt;span&gt;3-7 years old&lt;/span&gt;
-                       &lt;strong&gt;Little Kids&lt;/strong&gt;
+                       <span>3-7 years old</span>
+                      <strong>Little Kids</strong>
                     </div>
                     <button class="age-btn">View Frames</button>
                 </a>
@@ -76,8 +76,8 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                <a href="#" class="age-card" onclick="setFilters('big')">
                     <img src="https://github.com/bida25-479/Keitumetse-Gothaang/blob/main/download%20(8).jpg?raw=true" alt="Jimmy">
                     <div class="age-info">
-                       &lt;span&gt;3-7 years old&lt;/span&gt;
-                       &lt;strong&gt;Little Kids&lt;/strong&gt; 
+                      <span>8-12 years old</span>
+                        <strong>Big Kids</strong>
                     </div>
                    <button class="age-btn">View Frames</button>
                     </a>
@@ -87,8 +87,8 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
            <a href="#" class="age-card" onclick="setFilters('teens')">
                 <img src="https://github.com/bida25-479/Keitumetse-Gothaang/blob/main/The%20Lincoln.jpg?raw=true" alt="browey">
                 <div class="age-info">
-                   &lt;span&gt;3-7 years old&lt;/span&gt;
-                   &lt;strong&gt;Little Kids&lt;/strong&gt; 
+                  <span>13-17 years old</span> 
+                 <strong>Teens</strong>
                 </div>
                <button class="age-btn">View Frames</button>
                 </a>
@@ -371,7 +371,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                 </div>
 
 
-                <div class="product-card" data-category="big data-gender="boys"">
+                <div class="product-card" data-category="big" data-gender="boys">
                     <div class="top-check">
                     <input type="checkbox"
                      class="add-to-cart"
@@ -397,7 +397,7 @@ Find the perfect frames for your child — stylish, comfortable and made for eve
                 </div>
 
 
-               <div class="product-card" data-category="data-gender="boys"">
+               <div class="product-card" data-category="big" data-gender="boys"">
                     <div class="top-check">
                     <input type="checkbox"
                      class="add-to-cart"
@@ -704,8 +704,12 @@ document.querySelectorAll('.product-card').forEach(card => {
 </script>
 
 <script>
-let currentAge age;let currentAge = "all";
-    currentGender = "all"; // reset gender when changing age
+let currentAge = "all";
+let currentGender = "all"; 
+
+function setFilters(age) {
+    currentAge = age;
+    currentGender = "all";
 
     
     const genderFilter = document.querySelector(".gender-filter");
@@ -727,27 +731,22 @@ function applyFilters() {
     const products = document.querySelectorAll(".product-card");
     
 products.forEach(product => {
-        const productAge = product.dataset.age;
+        const productAge = product.dataset.category;
         const productGender = product.dataset.gender;
 
-        
-        const ageMatch =
-            currentAge === "all" || productAge === currentAge;
-
-       
-        const genderMatch =
-            currentGender === "all" || productGender === currentGender;
-    
+  
+const ageMatch = (currentAge === "all" || productAge === currentAge);
+        const genderMatch = (currentGender === "all" || productGender === currentGender);
 
         if (ageMatch && genderMatch) {
             product.style.display = "block";
         } else {
             product.style.display = "none";
         }
-    });
+    
+  });
 }
 </script>
-
 
 <footer>
     <p>&copy; 2026 BrightSight Kids| Clear vision for little eyes| All rights reserved</p>
