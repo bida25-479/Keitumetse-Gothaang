@@ -8,11 +8,12 @@ body {
 }
 
 header{
-    background-image: ("https://github.com/bida25-479/Keitumetse-Gothaang/blob/main/Premium%20Vector%20_%20Orange%20Wave%20Background%20Abstract.jpg?raw=true");
+    background-image: url("https://github.com/bida25-479/Keitumetse-Gothaang/blob/main/Premium%20Vector%20_%20Orange%20Wave%20Background%20Abstract.jpg?raw=true");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 60px 20px;
 }
 
 
