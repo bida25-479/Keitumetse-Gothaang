@@ -14,6 +14,7 @@ header{
     background-repeat: no-repeat;
     background-color: rgba(255, 255, 255, 0.8); 
     padding: 60px 20px;
+    position: relative;
 }
 
 
@@ -26,8 +27,20 @@ header h1 {
     color: #2c3e50
 }
 
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+header * {
+    position: relative;
+    z-index: 1;
+}
+
 .bg-pink {
-    background-color: #ffd6a5 !important;
+    background-color: rgba(255, 214, 165, 0.85) !important;
 }
 
 .navbar-nav .nav-link{
