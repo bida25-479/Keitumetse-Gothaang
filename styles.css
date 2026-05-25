@@ -369,7 +369,8 @@ header h1 {
     text-align: center;
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     transition: transform 0.25s ease;
-}
+    position: relative; 
+    
 .section-card:hover{
     transform: translateY(-6px);
 }
@@ -390,13 +391,10 @@ header h1 {
     position: absolute;
     top: 12px;
     left: 12px;
-
     background: #f4a261;
     color: white;
-
     padding: 5px 12px;
     font-size: 12px;
-
     border-radius: 20px;
 }
 
