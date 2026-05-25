@@ -947,7 +947,6 @@ small-boxes div{
     border-radius: 14px;
     padding: 30px;
     max-width: 420px;
-    margin: auto;
     box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 .peach-section::after{
