@@ -698,7 +698,7 @@ img{
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 300);
+    grid-template-columns: repeat(3, 280);
     gap: 25px;
     margin-bottom: 40px auto;
     justify-content: center;  
