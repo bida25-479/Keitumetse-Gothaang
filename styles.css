@@ -1023,6 +1023,39 @@ small-boxes div{
     margin-top: 15px;
     font-size:  18px;
 }
+
+.delivery-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;   /* ✅ controls spacing cleanly */
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #f4a261;   /* ✅ your orange */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.submit-btn:active {
+    transform: scale(0.96);
+}
+
+
+
+.radio-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
     
 label {
     display: block;
