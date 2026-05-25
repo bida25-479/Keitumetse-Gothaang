@@ -965,7 +965,7 @@ img{
 }
 
 .peach-section{    
-    background: transparent;
+    background: none !important;
     border: 2px solid #8B5E3C;
     background-size: cover;
     padding: 60px 20px;
