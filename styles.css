@@ -453,7 +453,7 @@ img {
 
 
 
-/*mobile responsiveness*/
+
 @media (max-width: 768px) {
     .split-section{
         flex-direction: column;
@@ -696,23 +696,26 @@ img{
     margin: 0 auto 20px;
 }
 
-.product-grid {
+.product-grid {   
     display: grid;
-    grid-template-columns: repeat(3, 280px);
+    grid-template-columns: repeat(3, 280px); 
     gap: 25px;
-    margin-bottom: 40px auto;
     justify-content: center;  
+    margin: 40px auto;  
 }
 
+
 @media (max-width: 768px) {
-    .product-grid {
-        grid-template-columns: 1fr 1fr;   /* 2 columns */
+ .product-grid {
+        grid-template-columns: repeat(2, 280px);
+        justify-content: center;
+
     }
 }
 
 @media (max-width: 480px) {
-    .product-grid {
-        grid-template-columns: 1fr;   /* 1 column */
+  .product-grid {
+        grid-template-columns: 280px;
     }
 }
 
