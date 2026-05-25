@@ -965,11 +965,8 @@ img{
 }
 
 .peach-section{    
-   background: radial-gradient(circle at center,
-        #fff7f0 30%,
-        #fde5d0 60%,
-        #f4a261 100%
-    );
+    background: url("") no-repeat center;
+    background-size: cover;
     padding: 60px auto;
     max-width: 1100px;
     border-radius: 20px;
