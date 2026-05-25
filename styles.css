@@ -965,7 +965,7 @@ img{
 }
 
 .peach-section{    
-    background: none !important;
+    background: #fff7f0; 
     border: 2px solid #8B5E3C;
     background-size: cover;
     padding: 60px 20px;
@@ -1040,13 +1040,13 @@ img{
 .delivery-options {
     display: flex;
     flex-direction: column;
-    gap: 10px;   /* ✅ controls spacing cleanly */
+    gap: 10px;  
 }
 
 .submit-btn {
     width: 100%;
     padding: 14px;
-    background-color: #f4a261;   /* ✅ your orange */
+    background-color: #f4a261;   
     color: white;
     border: none;
     border-radius: 25px;
