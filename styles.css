@@ -387,7 +387,7 @@ header h1 {
     font-weight: bold;
 }
 
-.promo-badge {
+.section-card .promo-badge {
     position: absolute;
     top: 12px;
     left: 12px;
