@@ -388,14 +388,14 @@ header h1 {
 }
 
 .section-card .promo-badge {
-    position: absolute;
-    top: 12px;
-    left: 12px;
+    display: inline-block;
+    margin-bottom: 8px;
     background: #f4a261;
     color: white;
-    padding: 5px 12px;
+    padding: 4px 10px;
     font-size: 12px;
     border-radius: 20px;
+
 }
 
 
