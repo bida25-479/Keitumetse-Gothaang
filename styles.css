@@ -340,7 +340,7 @@ header h1 {
     color: #2c3e50;
 }
         
-/*right grid*/
+
 .section-grid{
     width: 100%;
     flex: 1;
@@ -365,7 +365,7 @@ header h1 {
 
 
 
-/*product card*/
+
 .section-card{
     background: #ffffff;
     border: 2px solid #8B5E3C;
@@ -805,7 +805,7 @@ img{
     
 }
 
-/*for product cards inside products page*/
+
 .product-card{
     background: #ffffff;
     border: 2px solid #8B5E3C; 
@@ -919,7 +919,7 @@ img{
     }
 }
 
-/*contact page css*/
+
 .contact-form{
     width: 100%;
     margin: auto;
@@ -1049,7 +1049,7 @@ img{
 }
 
 
-/*order page and frames pages*/
+
 .order-form {
     max-width: 700px;
     margin: auto;
@@ -1150,7 +1150,7 @@ textarea {
     padding: 20px;
 }
 
-/* LEFT SIDE */
+
 .feedback-left {
     flex: 1;
     padding-top: 60px;
@@ -1174,7 +1174,7 @@ textarea {
     color: #f4a261;
 }
 
-/* RIGHT SIDE FORM CARD */
+
 .feedback-form-card {
     flex: 1;
     background: white;
@@ -1188,7 +1188,7 @@ textarea {
     color: #2c3e50;
 }
 
-/* INPUTS */
+
 .feedback-form-card input,
 .feedback-form-card textarea {
     width: 100%;
@@ -1200,7 +1200,7 @@ border: 1px solid #ccc;
     border-radius: 6px;
 }
 
-/* SIDE-BY-SIDE INPUTS */
+
 .form-row {
     display: flex;
     gap: 15px;
@@ -1218,7 +1218,7 @@ border: 1px solid #ccc;
 }
 
 
-/* BUTTON */
+
 .feedback-form-card button {
     width: 100%;
     padding: 12px;
